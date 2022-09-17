@@ -1,0 +1,230 @@
+//indexed array
+
+$peopleOne = ['shaun', 'tola', 'bola'];
+//echo $peopleOne[1];     it means bring out tola in $peopleOne
+$peopleTwo = array('bola', 'sola', 'tolani');
+//echo $peopleTwo[2];     this is the second way of bringing out a data from an indexedarray
+$ages = [20, 30, 40, 90];
+//print_r($ages)  it means bring out the readable version of this data
+$ages[2] = 678;
+//print_r($ages);  it means overide the old data in [2]with the new data in [2]
+$ages[] = 60;
+//print_r($ages); this is a way of adding another value to an array
+array_push($ages, 70);
+//print_r($ages);
+//echo count($ages); also another way of adding value to an array
+$peopleThree = array_merge($peopleOne, $peopleTwo);//as the name implies it is a way of joining arrays
+//print_r($peopleThree);this completes the action of merging
+
+
+
+//associative arrays (key & value pairs)
+
+$ninjaOne = ['shaun' => 'black', 'mario' =>'orange', 'sola' =>'brown'];
+//cho $ninjaOne['mario'];
+//print_r($ninjaOne);
+$ninjaTwo = array('bowser' =>'green', 'peach' =>'yellow');
+$ninjaThree = array_merge($ninjaOne, $ninjaTwo);
+//print_r($ninjaThree);
+$ninjaTwo['peach'] = 'green';
+//print_r($ninjaTwo);
+//echo count($ninjaOne);
+//print_r($ninjaTwo);
+//associative arrays
+  //$name = "Yoshi";
+  //$age = "15years";
+
+      //$stringOne = 'my email is';
+      //$stringTwo = 'fawolejoshuaajibola@gmail.com';
+
+    //$name = "Mario";
+    //echo "hey my name is actually 'joshua'";
+  //  echo strLen($name);
+  //  echo strtoupper($name);
+  // echo str_replace('M','w',"$name");   it means replace m with w in ("$name")
+    //$radius = 25;
+    //$pi = 3.14;
+    //basic-*, /, +, -, ^       calculatory stuffs
+     //echo $pi * $radius**2;
+     //order of operation (B I D M A S)
+    // Echo 2 * (4 + 9) / 3;
+    // increment and decrement operators
+    //echo $radius++;
+    //echo $radius;
+    //$age = 20;
+    //$age -=10;
+    //echo $age
+    //number functions
+     //echo floor($pi);
+    // echo ceil($pi);
+    //echo pi();
+
+    //multi-dimensional arrays    this can be elained as a type of array that contains another array or arrays
+$blogs =[
+             ['title' =>'Mario party', 'author' =>'mario', 'content' =>'lorem', 'likes' => 200],
+             ['title' =>'mario kart chests', 'author' =>'toad', 'content' =>'lorem', 'likes' =>6000],
+             ['title' =>'zelda hidden chests', 'author' =>'link', 'content' =>'lorem', 'likes' =>65000],
+];  //this is a very good of example of a multi-dimensional array
+  //print_r($blogs[1][1]);
+        //  echo $blogs[2]['author'];
+        //echo count($blogs);
+        $blogs[] = ['title' => 'castle party', 'author' => 'josh', 'content' =>'ishhhhhh', 'likes' => 15000];  // this as explained ealier is another stylish way of adding data to an array
+        //print_r($blogs
+        //$popped = array_pop($blogs);  this means that "remove others and display only ($blogs)"
+      //  print_r($popped);
+
+      //loops
+                 //its a little bit complicated we will come back to the explanation later
+
+      $ninjas = ['shaun', 'ryu', 'yoshi'];
+
+      //for ($i = 0; $i < count($ninjas); $i++){
+      //  echo $ninjas[$i] . '<br />';}
+
+       //foreach($ninjas as $ninja){
+        //echo $ninja. '<br />';}
+
+       $products = [
+        ['name' => 'shiny star', 'price' => 30],
+        ['name' => 'green shell', 'price' => 70],
+        ['name' => 'red shell', 'price' => 130],
+        ['name' => 'gold coin', 'price' => 310],
+        ['name' => 'banana skin', 'price' => 3]
+       ];
+       //foreach($products as $product){
+        //echo $product['name'] . ' - ' . $product['price'];
+         //echo '<br />';}
+
+          //while loop
+    //  $i = 0;
+      //  while($i < count($products)){
+    //      echo $products[$i]['name'];
+    //  echo '<br />';
+      // $i++;}
+
+      //comparison booleans(true or false)
+      //numbers
+       //echo 16<24;
+       //echo 5 >10;
+      // echo 45 ==100;
+    //  echo 1000 == 1000;
+    //echo 5<=10;
+    // echo 5>=5;
+
+    //stings
+     //echo 'ayo'<'bola';          true
+        //echo 'ayo'>'bola';          false
+      //  echo 'mario' =='mario';
+      //echo 'mario'=='Mario'
+
+      // loose vs strict equal comparison
+       //echo 5=='5';
+       //echo 5==='5';
+       //echo true=='1';
+       //echo false=='';
+
+       //conditional statements
+
+      // $price = 20;
+      // if ($price < 10) {
+      //   echo 'the condition is met.';
+      // }elseif($price<100){
+      //   echo 'elseif condition met {
+        //echo 'condition not met'
+      // }else{
+        // echo 'condition not met.';
+      // }
+
+
+
+      //functions
+      //functions       they are blocks of codes that can be executed to do something
+
+//function sayHello($name){
+    //     echo "good morning my $name!";
+  //    }
+    //  sayHello('people');
+
+      $products = [
+       ['name' => 'shiny star', 'price' => 30],
+       ['name' => 'green shell', 'price' => 70],
+       ['name' => 'red shell', 'price' => 130],
+       ['name' => 'gold coin', 'price' => 310],
+       ['name' => 'banana skin', 'price' => 3]
+      ];
+      //foreach($products as $product){
+      // if($product['price'] < 100 && $product['price'] this is a way to combine two conditional statements in a php tag
+        // echo $product['name'] . '<br />'   } }
+
+    //if($product['price'] > 20 || $product['price'] < 1){
+   //echo $product['name'] . '<br />';
+  //}}
+
+
+  //continue and break
+
+
+//  foreach($products as $product){
+//   if($product['name'] ==='green shell'){
+//     break;
+//  }
+
+//if($product['price'] > 300){
+ //continue;
+//}
+// echo $product['name'] . '<br />';
+//}
+
+
+
+   //function sayhello($name){
+  //   echo "good morning my neighboours $name";
+   //}
+   //sayHello('guy');
+
+
+   //include and require
+
+//   include('ninja.php');
+//   require('ninja.php');
+
+//require('ninja.php');
+ //echo 'end of php';
+
+
+    //variable
+
+
+    //localvariable
+
+    function myFunc(){
+     $price = 10;
+     echo $price;
+
+    }
+     //myFunc();
+     //echo $price;
+
+     function myFuncTwo($age){
+       echo $age;
+     }
+     //myFuncTwo(25);    whenever we create a variable in a function then the variable can only be used locally i.e only inside the function
+
+     //global variables
+
+     $name = 'mario';
+
+     //function sayhello(){
+       //global $name;
+       //$name = 'yoshi';
+       //echo "hello $name";
+    // }
+    // sayhello();
+    // echo $name;
+
+  //  function saybye(&$name){
+    //  $name = 'wario';
+      //echo "bye $name";
+    //}
+    //saybye($name);
+  //  echo $name;

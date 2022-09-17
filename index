@@ -1,0 +1,4 @@
+<?php
+    echo "My first php script in xampp server hmmmm thank God its now working";
+
+?>
